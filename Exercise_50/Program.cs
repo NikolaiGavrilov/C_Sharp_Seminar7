@@ -67,7 +67,7 @@ void FindElement (int [,] arrayToAnalyse)
     }
     if (rowsPosition > arrayToAnalyse.GetLength(0) || columnsPosition > arrayToAnalyse.GetLength(1))
         Console.WriteLine("Error. There is no such element. Try again");
-    else if (rowsPosition < 0 || columnsPosition < 0)
+    else if (rowsPosition <= 0 || columnsPosition <= 0)
         Console.WriteLine("Error. There is no such element. Try again");
 }
 
